@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="549.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomersController">
+   <children>
+      <TableView fx:id="customerRecordsTable" layoutX="34.0" layoutY="46.0" prefHeight="456.0" prefWidth="524.0">
+        <columns>
+          <TableColumn fx:id="customerRecordsTableID" prefWidth="50.33332824707031" text="CustID" />
+          <TableColumn fx:id="customerRecordsTableName" prefWidth="67.33334350585938" text="Name" />
+            <TableColumn fx:id="customerRecordsTableAddress" text="Address" />
+            <TableColumn fx:id="customerRecordsTablePhone" prefWidth="76.0" text="Phone" />
+            <TableColumn fx:id="customerRecordsTableState" prefWidth="89.00003051757812" text="State/Province" />
+            <TableColumn fx:id="customerRecordsTableCountry" prefWidth="70.0" text="Country" />
+            <TableColumn fx:id="customerRecordsTablePostalCode" prefWidth="98.66668701171875" text="Postal Code" />
+        </columns>
+      </TableView>
+      <Button fx:id="backtoMainMenu" layoutX="508.0" layoutY="509.0" mnemonicParsing="false" onAction="#onActionDisplayMainMenuScreen" text="Return to Main Menu" />
+      <Button fx:id="addCustomer" layoutX="500.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionCustomerAddScreen" prefHeight="25.0" prefWidth="58.0" text="Add" />
+      <Label layoutX="34.0" layoutY="10.0" prefHeight="25.0" prefWidth="199.0" text="Customer Records">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteCustomer" layoutX="432.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionDeleteCustomer" prefHeight="25.0" prefWidth="58.0" text="Delete" />
+      <Button fx:id="editCustomer" layoutX="372.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionDisplayCustomerEditScreen" prefHeight="25.0" prefWidth="51.0" text="Edit" />
+   </children>
+</AnchorPane>

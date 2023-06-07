@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="onActionCustomerEditBack" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerEditController">
+   <children>
+      <ComboBox fx:id="customerCountryEdit" layoutX="226.0" layoutY="288.0" onAction="#onActionCustomerCountryEdit" prefWidth="150.0" />
+      <ComboBox fx:id="customerStateEdit" layoutX="225.0" layoutY="249.0" onAction="#onActionCustomerStateEdit" prefWidth="150.0" />
+      <TextField fx:id="customerIDEdit" disable="true" editable="false" layoutX="226.0" layoutY="90.0">
+         <effect>
+            <ColorAdjust brightness="-0.16" hue="-0.22" />
+         </effect></TextField>
+      <TextField fx:id="customerNameEdit" layoutX="226.0" layoutY="128.0" />
+      <TextField fx:id="customerPhoneEdit" layoutX="226.0" layoutY="168.0" />
+      <TextField fx:id="customerAddressEdit" layoutX="226.0" layoutY="207.0" />
+      <TextField fx:id="customerPostalEdit" layoutX="227.0" layoutY="329.0" />
+      <Label layoutX="35.0" layoutY="24.0" prefHeight="34.0" prefWidth="215.0" text="Edit Customer Records">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="86.0" prefHeight="25.0" prefWidth="87.0" text="Customer ID" />
+      <Label layoutX="128.0" layoutY="128.0" prefHeight="25.0" prefWidth="87.0" text="Name" />
+      <Label layoutX="128.0" layoutY="168.0" prefHeight="25.0" prefWidth="87.0" text="Phone" />
+      <Label layoutX="128.0" layoutY="207.0" prefHeight="25.0" prefWidth="87.0" text="Address" />
+      <Label layoutX="128.0" layoutY="253.0" prefHeight="25.0" prefWidth="87.0" text="State/Province" />
+      <Label layoutX="128.0" layoutY="292.0" prefHeight="25.0" prefWidth="87.0" text="Country" />
+      <Label layoutX="128.0" layoutY="333.0" prefHeight="25.0" prefWidth="87.0" text="Postal Code" />
+      <Button fx:id="customerEditSave" layoutX="425.0" layoutY="358.0" mnemonicParsing="false" onAction="#onActionCustomerEditSave" text="Save" />
+      <Button layoutX="497.0" layoutY="358.0" mnemonicParsing="false" onAction="#onActionCustomerEditBack" text="Back" />
+   </children>
+   <effect>
+      <ColorAdjust brightness="-0.06" hue="-0.51" />
+   </effect>
+</AnchorPane>
